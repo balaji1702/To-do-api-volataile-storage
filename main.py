@@ -1,7 +1,11 @@
 from enum import Enum
 from typing import Optional
 from fastapi import FastAPI
+<<<<<<< HEAD
 #some comman for testing 
+=======
+
+>>>>>>> ef755eac125df371390db5271fabd0e132c9d273
 app = FastAPI()
 from pydantic import BaseModel
 task_list=[]
@@ -55,7 +59,11 @@ def update_status(taskname:str,q:Status):
     for i in task_list:
         if(i["task_name"]==taskname):
             i["status"]=q
+<<<<<<< HEAD
             return {"msg":f"status updated to {q}"} 
+=======
+            return {"msg":"status updated to {q}"} 
+>>>>>>> ef755eac125df371390db5271fabd0e132c9d273
 
     return {"msg":"something not good"}
 
