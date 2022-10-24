@@ -55,7 +55,7 @@ def update_status(taskname:str,q:Status):
     for i in task_list:
         if(i["task_name"]==taskname):
             i["status"]=q
-            return {"msg":"status updated to {q}"} 
+            return {"msg":f"status updated to {q}"} 
 
     return {"msg":"something not good"}
 
